@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "16388535273",
+    "firebase_url": "https://nibbl-b8d73-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nibbl-b8d73",
+    "storage_bucket": "nibbl-b8d73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16388535273:android:49aacf67b2a2e19938d178",
+        "android_client_info": {
+          "package_name": "com.example.auth_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16388535273-uo0lujk0emcuhsjtfnr2i2dr2ak4uliq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw5mAEdXi5xc1anND5E70W-Qz2oAjaJS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16388535273-uo0lujk0emcuhsjtfnr2i2dr2ak4uliq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "16388535273-0jbk5f7n01630ir0aoiaebvtrttlc0vc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.co.nibblv11"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16388535273:android:938a0617eba606ce38d178",
+        "android_client_info": {
+          "package_name": "in.co.nibbl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16388535273-gkl042pgoig8t3rb3562prt3hhhu9ieb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.co.nibbl",
+            "certificate_hash": "30b5db6009ee3561cd7117db6b43cd39fe294ff2"
+          }
+        },
+        {
+          "client_id": "16388535273-kmm8p7nq51vkukgclocke5a8ncg4hdm1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.co.nibbl",
+            "certificate_hash": "012021b0999b8cc53aa3af1a45d2fd8adf5b0fe6"
+          }
+        },
+        {
+          "client_id": "16388535273-uo0lujk0emcuhsjtfnr2i2dr2ak4uliq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw5mAEdXi5xc1anND5E70W-Qz2oAjaJS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16388535273-uo0lujk0emcuhsjtfnr2i2dr2ak4uliq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "16388535273-0jbk5f7n01630ir0aoiaebvtrttlc0vc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.co.nibblv11"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16388535273:android:98fb3083c61704cc38d178",
+        "android_client_info": {
+          "package_name": "in.co.nibblv11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16388535273-4u7tast44m1o6fsd9jcir1pbrfr9k2po.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.co.nibblv11",
+            "certificate_hash": "012021b0999b8cc53aa3af1a45d2fd8adf5b0fe6"
+          }
+        },
+        {
+          "client_id": "16388535273-6b5lmqd75fj4fuug70mdddiau6u3k958.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.co.nibblv11",
+            "certificate_hash": "88d41f9cc2b4d391c909b4911b7abb642aa35616"
+          }
+        },
+        {
+          "client_id": "16388535273-ldajer3001i70epkppblm79tdbel7p3m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.co.nibblv11",
+            "certificate_hash": "30b5db6009ee3561cd7117db6b43cd39fe294ff2"
+          }
+        },
+        {
+          "client_id": "16388535273-uo0lujk0emcuhsjtfnr2i2dr2ak4uliq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw5mAEdXi5xc1anND5E70W-Qz2oAjaJS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16388535273-uo0lujk0emcuhsjtfnr2i2dr2ak4uliq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "16388535273-0jbk5f7n01630ir0aoiaebvtrttlc0vc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.co.nibblv11"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

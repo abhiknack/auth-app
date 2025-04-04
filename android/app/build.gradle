@@ -1,0 +1,99 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    // END: FlutterFire Configuration
+    id "org.jetbrains.kotlin.android"
+    // The Flutter Gradle Plugin must be applied *after* the Android plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def keystorePropertiesFile = rootProject.file('keystore.properties')
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    try {
+        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+    } catch (Exception e) {
+        println "Could not load keystore.properties: $e"
+        // Set defaults if loading fails or file doesn't exist
+        keystoreProperties['storeFile'] = ''
+        keystoreProperties['storePassword'] = ''
+        keystoreProperties['keyAlias'] = ''
+        keystoreProperties['keyPassword'] = ''
+    }
+} else {
+    println "keystore.properties not found. Using defaults for signing."
+    // Set defaults if the file doesn't exist
+    keystoreProperties['storeFile'] = ''
+    keystoreProperties['storePassword'] = ''
+    keystoreProperties['keyAlias'] = ''
+    keystoreProperties['keyPassword'] = ''
+}
+
+android {
+    namespace 'com.example.auth_app'
+    compileSdk = 35
+    ndkVersion = "26.3.11579264"
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "com.example.auth_app"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        minSdk = 24
+        targetSdkVersion 34
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    signingConfigs {
+        release {
+            // Check if the file path from properties is valid before creating a file object
+            def storeFilePath = keystoreProperties['storeFile']
+            storeFile = storeFilePath != null && !storeFilePath.isEmpty() ? file(storeFilePath) : null
+            storePassword = keystoreProperties['storePassword']
+            keyAlias = keystoreProperties['keyAlias']
+            keyPassword = keystoreProperties['keyPassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            // Only apply the release signing config if a valid storeFile is configured
+            if (signingConfigs.release.storeFile != null && signingConfigs.release.storeFile.exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                println "Release signing config not applied: keystore.properties missing or invalid."
+                // Optionally fall back to debug signing for release builds if needed for testing
+                // signingConfig signingConfigs.debug
+            }
+
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+//            useProguard true
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // Ensure debug builds don't try to use release signing
+            signingConfig signingConfigs.debug // Default debug signing
+        }
+    }
+
+    dependencies {
+        coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.2'
+    }
+}
+
+flutter {
+    source = "../.."
+}
